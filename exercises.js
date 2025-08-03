@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_07();
+  exercise_10();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -220,9 +220,9 @@ function exercise_08() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
-
+let charlie = JSON.parse(jsonStringToParse);
+console.log(charlie.age);
+console.log(charlie);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -241,8 +241,10 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+let decNum = 3.14895;
+console.log(Math.floor(decNum));
+console.log(Math.round(decNum));
+console.log(Math.ceil(decNum));
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -261,8 +263,9 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+let decNum = 3.14985;
+let fixed = decNum.toFixed(2);
+console.log(fixed);
   // CODE IN THE OPEN LINES ABOVE
 }
 
