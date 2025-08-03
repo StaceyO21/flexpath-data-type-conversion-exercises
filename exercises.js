@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_07();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -39,8 +39,19 @@ function exercise_01() {
   */
 
   // CODE IN THE OPEN LINES BELOW
+let name = "Finney";
+let age = 3;
+let vicious = false;
+let dog = {
+  breed: "Whipit",
+};
+let painInButt = true;
 
-  const placeholder = "Delete this line and code in this space";
+console.log(typeof(name));
+console.log(typeof(age));
+console.log(typeof(vicious));
+console.log(typeof(dog));
+console.log(typeof(painInButt));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -59,8 +70,10 @@ function exercise_02() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
+let cookies = 4;
+let cookieString = String(cookies);
+console.log(cookieString);
+console.log(typeof(cookieString));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -82,7 +95,13 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+let num1 = 0;
+let num2 = 1;
+let convNum1 = Boolean(num1);
+let convNum2 = Boolean(num2);
+
+console.log(convNum1);
+console.log(convNum2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -101,8 +120,9 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+let nonNum = "forty";
+let isNonNum = Number(nonNum);
+console.log(isNaN(isNonNum));
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -122,8 +142,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+let age = 38;
+let ageString = `I am ${age} years old.`;
+console.log(ageString);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -148,7 +169,11 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+let aliceApples = name + " has " + number + " apples.";
+console.log(aliceApples);
+
+let aliceApples2 = `${name} has ${number} apples.`;
+console.log(aliceApples2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -166,7 +191,14 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+let dog = {
+  name: "Finney",
+  age: 3,
+  vicious: false
+}
+
+let dogJson = JSON.stringify(dog);
+console.log(dogJson);
 
   // CODE IN THE OPEN LINES ABOVE
 }
