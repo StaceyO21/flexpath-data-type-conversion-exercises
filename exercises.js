@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_10();
+  exercise_17();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -286,7 +286,10 @@ function exercise_11() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+let int1 = 100000.25;
+let usFormatter = new Intl.NumberFormat("en-US");
+let numFormat = usFormatter.format(int1);
+console.log(numFormat);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -311,8 +314,9 @@ function exercise_12() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+let salary = 10000;
+const formatter1 = new Intl.NumberFormat('en-US', {style: 'currency', currency: "USD"});
+console.log(`US Dollars: ${formatter1.format(salary)}`);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -336,7 +340,9 @@ function exercise_13() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+let salary = 100000;
+const formatter1 = new Intl.NumberFormat('ja-JP', {style: "currency", currency: "JPY"});
+console.log(`Japanese Yen: ${formatter1.format(salary)}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -356,8 +362,9 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+let newDate = new Date;
+console.log(newDate.toDateString());
+console.log(newDate.toTimeString());
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -377,8 +384,9 @@ function exercise_15() {
   */
 
   // CODE IN THE OPEN LINES BELOW
-
-  const placeholder = "Delete this line and code in this space";
+let newDate1 = new Date();
+console.log(newDate1.toLocaleDateString('en-US'));
+console.log(newDate1.toLocaleTimeString('en-GB'));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -396,8 +404,12 @@ function exercise_16() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
 
+try{
+let obj = JSON.parse("This is not JSON");
+} catch (error){
+  console.log("Error parsing JSON: ", error.message);
+}
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -413,8 +425,10 @@ function exercise_17() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+let bool = true;
+let stringBool = String(bool);
+console.log(stringBool);
+console.log(typeof(stringBool));
   // CODE IN THE OPEN LINES ABOVE
 }
 
