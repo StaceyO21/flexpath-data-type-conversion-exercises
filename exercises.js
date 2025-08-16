@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_17();
+  exercise_18();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -462,8 +462,20 @@ function exercise_18() {
   */
 
   // CODE IN THE OPEN LINES BELOW
+let dec = 1234567.89;
+let formatter = new Intl.NumberFormat('en-US', {style: "currency", currency: "USD"});
+let usFormatter = formatter.format(dec);
+console.log(usFormatter);
 
-  const placeholder = "Delete this line and code in this space";
+let decRussia = 1234567.89;
+let formatterRuss = new Intl.NumberFormat('ru-RU', {style: 'currency', currency: 'RUB'});
+let russFormatter = formatterRuss.format(decRussia);
+console.log(russFormatter);
+
+let decJap = 1234567.89;
+let formatterJP = new Intl.NumberFormat('ja-JP', {style: 'currency', currency: 'JPY'});
+let jpFormatter = formatterJP.format(decJap);
+console.log(jpFormatter);
 
   // CODE IN THE OPEN LINES ABOVE
 }
